@@ -1,17 +1,17 @@
 # Global settings for Netlify
 [build]
   command = ""  # Replace with your build command if applicable
-  publish = "/Age_calculator Wall-clock"              # Specify the root directory as the publish directory
 
-# Redirect rules for Age_calculator
+# Publish settings for Age_calculator
 [[redirects]]
-  from = "/Age_calculator/*"           # Define the URL path for Age_calculator
-  to = "Age_calculator/:splat"         # Specify the directory path for Age_calculator
+  from = "/Age_calculator/*"       # Define the URL path for Age_calculator
+  to = "Age_calculator/:splat"     # Specify the directory path for Age_calculator
   status = 200
+  publish = "Age_calculator"       # Specify the directory to publish for Age_calculator
 
-
-# Redirect rules for Wall-clock
+# Publish settings for Wall-clock
 [[redirects]]
   from = "/Wall-clock/*"           # Define the URL path for Wall-clock
   to = "Wall-clock/:splat"         # Specify the directory path for Wall-clock
   status = 200
+  publish = "Wall-clock"           # Specify the directory to publish for Wall-clock
